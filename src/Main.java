@@ -1,3 +1,4 @@
+import br.com.dio.desafio.domain.Conteudo;
 import br.com.dio.desafio.domain.Curso;
 import br.com.dio.desafio.domain.Mentoria;
 
@@ -23,10 +24,15 @@ public class Main {
         mentoria1.setDescricao("Mentoria sobre kotlin");
         mentoria1.setData(LocalDate.of(2024,05,30));
 
+        Conteudo curso3 = new Curso();
+        curso3.setTitulo("Curso de Kotlin");
+        curso3.setDescricao("Curso de introducao a kotlin");
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria1);
+        Conteudo mentoria2 = new Mentoria();
+        mentoria2.setTitulo("Mentoria Rest");
+        mentoria2.setDescricao("Mentoria sobre aplicasao arquitetura rest");
+
+
 
     }
 }
